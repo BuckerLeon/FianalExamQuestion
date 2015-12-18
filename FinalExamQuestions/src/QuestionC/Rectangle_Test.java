@@ -41,7 +41,7 @@ public class Rectangle_Test {
 		assertTrue(r2.ComputeArea() == 50);
 	}
 	
-	public void Rectangle_Test3() {
+	public void IllegalRectangle_Test1() {
 		
 		
 		Rectangle r2 = new Rectangle(5, 10);

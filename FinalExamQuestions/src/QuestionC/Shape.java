@@ -31,9 +31,7 @@ abstract class Shape {
 	
 	void setX(int newx) {
 		x = newx;
-		if (x>=0){
-			x = IllegalRectangle.getX();
-		}
+		
 	}
 
 	/**
@@ -42,9 +40,7 @@ abstract class Shape {
 	 */
 	void setY(int newy) {
 		y = newy;
-		if (y>=0){
-			y= IllegalRectangle.getY();
-		}
+		
 	}
 	
 

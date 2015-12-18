@@ -40,9 +40,12 @@ public class Student_Test {
 			e.printStackTrace();
 		}
 		Student stu1 = new Student("Bert", "Randall", "Gibbons", dBirthDate, "214 Labrador Lane", "302-893-6889", "bgibbons@udel.edu","MIS");
+		Student stu2 = new Student("Bert2", "Randall1", "Gibbons3", dBirthDate, "1214 Labrador Lane", "301-893-6889", "bgibbons1@udel.edu","MIS1");
+		Student stu3 = new Student("Bert3", "Randall2", "Gibbons4", dBirthDate, "2214 Labrador Lane", "304-893-6889", "bgibbons2@udel.edu","MIS2");
+		Student stu4 = new Student("Bert4", "Randall3", "Gibbons5", dBirthDate, "3214 Labrador Lane", "303-893-6889", "bgibbons3@udel.edu","MIS3");
+		Student stu5 = new Student("Bert5", "Randall4", "Gibbons6", dBirthDate, "4214 Labrador Lane", "305-893-6889", "bgibbons4@udel.edu","MIS4");
 
-
-		assertTrue(1==1);
+		assertTrue(5==5);
 	}
 
 }
