@@ -1,10 +1,11 @@
 package QuestionC;
 
-abstract class Shape {
-	private int x;
-	private int y;
+public abstract class IllegalRectangle {
+	
+	private static int x;
+	private static int y;
 
-	Shape(int newx, int newy) {
+	IllegalRectangle(int newx, int newy) {
 		moveTo(newx, newy);
 	}
 
@@ -12,7 +13,7 @@ abstract class Shape {
 	 * Getter for 'x'
 	 * @return - returns the value for 'x'
 	 */
-	int getX() {
+	static int getX() {
 		return x;
 	}
 
@@ -20,7 +21,7 @@ abstract class Shape {
 	 * Getter for 'y'
 	 * @return - return the value for 'y'
 	 */
-	int getY() {
+	static int getY() {
 		return y;
 	}
 
@@ -31,22 +32,21 @@ abstract class Shape {
 	
 	void setX(int newx) {
 		x = newx;
-		if (x>=0){
-			x = IllegalRectangle.getX();
+		if(x >= 0){
+			x = -x;
 		}
 	}
 
 	/**
-	 * Setter for 'y'	
+	 * Setter for 'y'
 	 * @param newy - value for 'y'
 	 */
 	void setY(int newy) {
 		y = newy;
-		if (y>=0){
-			y= IllegalRectangle.getY();
+		if(y >= 0){
+			y = -y;
 		}
 	}
-	
 
 
 	/**
@@ -75,4 +75,5 @@ abstract class Shape {
 	
 	
 	abstract public double ComputeArea();
+
 }

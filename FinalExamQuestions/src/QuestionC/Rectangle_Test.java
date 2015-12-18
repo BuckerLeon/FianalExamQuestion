@@ -41,5 +41,11 @@ public class Rectangle_Test {
 		assertTrue(r2.ComputeArea() == 50);
 	}
 	
+	public void Rectangle_Test3() {
+		
+		
+		Rectangle r2 = new Rectangle(5, 10);
+		assertTrue(r2.ComputeArea() == 50);
+	}
 
 }
